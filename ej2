@@ -1,0 +1,12 @@
+class Persona:
+    def __init__(self, nombre, edad, sexo):
+        self.__nombre = nombre
+        self.__edad = edad
+        self.__sexo = sexo
+
+    def cambiar_edad(self, nueva_edad):
+        if nueva_edad >= 0:
+            self.__edad = nueva_edad
+
+    def mostrar_informacion(self):
+        return f"Nombre: {self.__nombre}, Edad: {self.__edad}, Sexo: {self.__sexo}”

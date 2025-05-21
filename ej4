@@ -1,0 +1,19 @@
+class Libro:
+
+def __init__(self, titulo, autor, año_publicacion):
+
+self.__titulo = titulo
+
+self.__autor = autor
+
+self.__año_publicacion = año_publicacion
+
+def descripcion(self):
+
+return f"'{self.__titulo}' por {self.__autor} (Publicado en {self.__año_publicacion})"
+
+def es_clasico(self):
+
+año_actual = datetime.now().year
+
+return (año_actual - self.__año_publicacion) > 50

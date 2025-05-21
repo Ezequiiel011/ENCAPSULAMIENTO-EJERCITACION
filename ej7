@@ -1,0 +1,12 @@
+class Empleado:
+    def __init__(self, nombre, salario, departamento):
+        self.__nombre = nombre
+        self.__salario = salario
+        self.__departamento = departamento
+
+    def aumentar_salario(self, porcentaje):
+        if porcentaje > 0:
+            self.__salario *= (1 + porcentaje / 100)
+
+    def mostrar_info(self):
+        return f"{self.__nombre} trabaja en {self.__departamento} y gana ${self.__salario:.2f}"
